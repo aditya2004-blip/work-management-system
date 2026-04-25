@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from '../features/auth/authSlice.jsx';
-import projectsReducer from '../features/projects/ProjectsSlice.jsx';
-import tasksReducer from '../features/tasks/tasksSlice.jsx';
-import usersReducer from '../features/users/UsersSlice.jsx';
-import dashboardReducer from '../features/dashboard/dashboardSlice.jsx';
+import authReducer from '../features/auth/authSlice';
+import projectsReducer from '../features/projects/ProjectsSlice';
+import tasksReducer from '../features/tasks/tasksSlice';
+import usersReducer from '../features/users/UsersSlice';
+import dashboardReducer from '../features/dashboard/dashboardSlice';
 
 // Configure Redux store with multiple feature reducers
 export const store = configureStore({
