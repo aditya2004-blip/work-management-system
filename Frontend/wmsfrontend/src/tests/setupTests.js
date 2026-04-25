@@ -1,0 +1,3 @@
+// Extend Jest matchers with @testing-library/jest-dom assertions
+// e.g. toBeInTheDocument(), toHaveValue(), toBeDisabled() …
+import '@testing-library/jest-dom';
