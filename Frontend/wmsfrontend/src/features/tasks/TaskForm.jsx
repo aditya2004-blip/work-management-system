@@ -7,11 +7,11 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { createTask, updateTask } from './tasksSlice';
-import { fetchProjects } from '../projects/projectsSlice';
+import { createTask, updateTask } from './tasksSlice.jsx';
+import { fetchProjects } from '../projects/projectsSlice.jsx';
 
-import { useNotification } from '../../context/NotificationContext';
-import Button from '../../components/common/Button';
+import { useNotification } from '../../context/NotificationContext.jsx';
+import Button from '../../components/common/Button.jsx';
 import { FolderOpen } from 'lucide-react';
 
 

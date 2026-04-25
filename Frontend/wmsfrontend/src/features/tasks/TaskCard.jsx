@@ -4,7 +4,7 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Pencil, Trash2, MessageCircle, Calendar, User, FolderOpen } from 'lucide-react';
-import Badge from '../../components/common/Badge';
+import Badge from '../../components/common/Badge.jsx';
 
 const TaskCard = ({ task, onEdit, onDelete, canManage, projects = [] }) => {
 

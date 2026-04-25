@@ -5,9 +5,9 @@ import { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 // Async thunks to fetch data from backend
-import { fetchTasks } from '../tasks/tasksSlice';
-import { fetchProjects } from '../projects/projectsSlice';
-import { fetchUsers } from '../users/usersSlice';
+import { fetchTasks } from '../tasks/tasksSlice.jsx';
+import { fetchProjects } from '../projects/projectsSlice.jsx';
+import { fetchUsers } from '../users/usersSlice.jsx';
 
 // Recharts components for graphs
 import {

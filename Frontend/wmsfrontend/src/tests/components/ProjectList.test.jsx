@@ -125,7 +125,7 @@ describe('ProjectList – role-based controls', () => {
   test('admin sees delete button for each project', async () => {
     api.get.mockResolvedValue({ data: [proj1] });
     renderAs(defaultAdminUser);
-    
+
     await waitFor(() => {
       const deleteButtons = screen.getAllByRole('button').filter(
         (btn) => btn.querySelector('svg') && btn.className.includes('hover:text-red')

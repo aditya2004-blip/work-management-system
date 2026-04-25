@@ -1,7 +1,7 @@
 
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import api from '../../api/axios';
+import api from '../../api/axios.jsx';
 
 export const fetchProjects = createAsyncThunk(
   'projects/fetchAll',
@@ -69,9 +69,9 @@ const projectsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchProjects.pending,   (state) => { state.loading = true;  state.error = null; })
+      .addCase(fetchProjects.pending, (state) => { state.loading = true; state.error = null; })
       .addCase(fetchProjects.fulfilled, (state, { payload }) => { state.loading = false; state.items = payload; })
-      .addCase(fetchProjects.rejected,  (state, { payload }) => { state.loading = false; state.error = payload; })
+      .addCase(fetchProjects.rejected, (state, { payload }) => { state.loading = false; state.error = payload; })
       .addCase(createProject.fulfilled, (state, { payload }) => {
         if (!state.items.some((p) => p.id === payload.id)) {
           state.items.unshift(payload);

@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { Bell, Sun, Moon, Search } from 'lucide-react';
-import { useTheme } from '../../context/ThemeContext';
-import { useNotification } from '../../context/NotificationContext';
-import useDebounce from '../../hooks/useDebounce';
-import NotificationPanel from '../notifications/NotificationPanel';
+import { useTheme } from '../../context/ThemeContext.jsx';
+import { useNotification } from '../../context/NotificationContext.jsx';
+import useDebounce from '../../hooks/useDebounce.jsx';
+import NotificationPanel from '../notifications/NotificationPanel.jsx';
 
 const Topbar = () => {
     const { darkMode, toggleDark } = useTheme(); // Theme context
@@ -32,7 +32,7 @@ const Topbar = () => {
 
     return (
         <header className="h-16 flex-shrink-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 flex items-center justify-between px-6 gap-4">
-            
+
             {/* Search input */}
             <div className="relative flex-1 max-w-md">
                 <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -46,7 +46,7 @@ const Topbar = () => {
             </div>
 
             <div className="flex items-center gap-1">
-                
+
                 {/* Theme toggle button */}
                 <button
                     onClick={toggleDark}

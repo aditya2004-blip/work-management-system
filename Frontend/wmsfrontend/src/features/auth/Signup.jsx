@@ -5,8 +5,8 @@ import * as yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { Zap, Eye, EyeOff } from 'lucide-react';
-import { signupUser, clearError } from './authSlice';
-import { useNotification } from '../../context/NotificationContext';
+import { signupUser, clearError } from './authSlice.jsx';
+import { useNotification } from '../../context/NotificationContext.jsx';
 
 // Validation schema
 const schema = yup.object({

@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProjects } from '../projects/projectsSlice';
-import { fetchTasks } from '../tasks/tasksSlice';
-import { fetchActivities } from './dashboardSlice';
+import { fetchProjects } from '../projects/projectsSlice.jsx';
+import { fetchTasks } from '../tasks/tasksSlice.jsx';
+import { fetchActivities } from './dashboardSlice.jsx';
 import { FolderOpen, CheckSquare, Clock, AlertCircle, Activity, User } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 

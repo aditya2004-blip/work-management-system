@@ -7,7 +7,7 @@ import {
   useMemo,
 } from 'react';
 import { toast } from 'react-hot-toast';
-import api from '../api/axios';
+import api from '../api/axios.jsx';
 import { useSelector } from 'react-redux';
 
 const NotificationContext = createContext(null);

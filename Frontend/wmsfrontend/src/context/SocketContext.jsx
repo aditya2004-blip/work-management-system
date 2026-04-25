@@ -1,10 +1,10 @@
 import { createContext, useContext, useEffect, useRef, useCallback } from "react";
 import { io } from "socket.io-client";
 import { useDispatch, useSelector } from "react-redux";
-import { taskAdded, taskUpdated, taskRemoved, taskMoved } from '../features/tasks/tasksSlice';
-import { projectAdded, projectUpdated, projectDeleted } from '../features/projects/projectsSlice';
-import { activityAdded } from '../features/dashboard/dashboardSlice';
-import { useNotification } from './NotificationContext';
+import { taskAdded, taskUpdated, taskRemoved, taskMoved } from '../features/tasks/tasksSlice.jsx';
+import { projectAdded, projectUpdated, projectDeleted } from '../features/projects/projectsSlice.jsx';
+import { activityAdded } from '../features/dashboard/dashboardSlice.jsx';
+import { useNotification } from './NotificationContext.jsx';
 
 const SocketContext = createContext(null);
 
