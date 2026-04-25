@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Bell, Sun, Moon, Search } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext.jsx';
 import { useNotification } from '../../context/NotificationContext.jsx';
-import useDebounce from '../../hooks/useDebounce.jsx';
+import useDebounce from '../../hooks/UseDebounce.jsx';
 import NotificationPanel from '../notifications/NotificationPanel.jsx';
 
 const Topbar = () => {
