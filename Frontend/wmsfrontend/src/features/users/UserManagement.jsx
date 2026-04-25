@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchUsers, updateUser, deleteUser } from './usersSlice.jsx';
+import { fetchUsers, updateUser, deleteUser } from './UsersSlice.jsx';
 import { useForm } from 'react-hook-form';
 import Badge from '../../components/common/Badge.jsx';
 import Modal from '../../components/common/Modal.jsx';

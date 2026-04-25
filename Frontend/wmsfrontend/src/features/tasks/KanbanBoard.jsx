@@ -5,7 +5,7 @@ import { useEffect, useState, useCallback, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { fetchTasks, updateTask, deleteTask, taskMoved } from './tasksSlice.jsx';
-import { fetchUsers } from '../users/usersSlice.jsx';
+import { fetchUsers } from '../users/UsersSlice.jsx';
 import {
     DndContext,
     closestCenter,

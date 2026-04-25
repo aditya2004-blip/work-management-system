@@ -9,7 +9,7 @@ import usersReducer, {
   fetchUsers,
   updateUser,
   deleteUser,
-} from '../../features/users/usersSlice';
+} from '../../features/users/UsersSlice';
 
 // Axios is mapped globally
 import api from '../../api/axios';
@@ -17,8 +17,8 @@ import api from '../../api/axios';
 // ── Fixtures ──────────────────────────────────────────────────
 const initialState = { items: [], loading: false, error: null };
 
-const user1 = { uid: 'u1', name: 'Alice', email: 'alice@test.com', role: 'manager',  status: 'active' };
-const user2 = { uid: 'u2', name: 'Bob',   email: 'bob@test.com',   role: 'employee', status: 'active' };
+const user1 = { uid: 'u1', name: 'Alice', email: 'alice@test.com', role: 'manager', status: 'active' };
+const user2 = { uid: 'u2', name: 'Bob', email: 'bob@test.com', role: 'employee', status: 'active' };
 
 // ── Initial state ─────────────────────────────────────────────
 
@@ -39,14 +39,14 @@ describe('usersSlice – fetchUsers thunk', () => {
 
   test('populates items on fulfilled', () => {
     const action = { type: fetchUsers.fulfilled.type, payload: [user1, user2] };
-    const next   = usersReducer(initialState, action);
+    const next = usersReducer(initialState, action);
     expect(next.loading).toBe(false);
     expect(next.items).toEqual([user1, user2]);
   });
 
   test('sets error on rejected', () => {
     const action = { type: fetchUsers.rejected.type, payload: 'Failed to fetch users' };
-    const next   = usersReducer(initialState, action);
+    const next = usersReducer(initialState, action);
     expect(next.error).toBe('Failed to fetch users');
   });
 
@@ -72,9 +72,9 @@ describe('usersSlice – fetchUsers thunk', () => {
 
 describe('usersSlice – updateUser thunk', () => {
   test('merges updated fields on fulfilled', () => {
-    const state  = { ...initialState, items: [user1, user2] };
+    const state = { ...initialState, items: [user1, user2] };
     const action = { type: updateUser.fulfilled.type, payload: { id: 'u1', role: 'admin' } };
-    const next   = usersReducer(state, action);
+    const next = usersReducer(state, action);
     // finds by uid === payload.id
     expect(next.items.find((u) => u.uid === 'u1').role).toBe('admin');
     expect(next.items.find((u) => u.uid === 'u2').role).toBe('employee');
@@ -100,9 +100,9 @@ describe('usersSlice – updateUser thunk', () => {
 
 describe('usersSlice – deleteUser thunk', () => {
   test('removes user by uid on fulfilled', () => {
-    const state  = { ...initialState, items: [user1, user2] };
+    const state = { ...initialState, items: [user1, user2] };
     const action = { type: deleteUser.fulfilled.type, payload: 'u1' };
-    const next   = usersReducer(state, action);
+    const next = usersReducer(state, action);
     expect(next.items).toHaveLength(1);
     expect(next.items[0].uid).toBe('u2');
   });

@@ -14,7 +14,7 @@ import projectsReducer, {
   projectAdded,
   projectUpdated,
   projectDeleted,
-} from '../../features/projects/projectsSlice';
+} from '../../features/projects/ProjectsSlice';
 
 // Axios is mapped globally
 import api from '../../api/axios';

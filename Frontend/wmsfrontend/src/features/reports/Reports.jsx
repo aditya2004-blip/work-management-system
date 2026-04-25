@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // Async thunks to fetch data from backend
 import { fetchTasks } from '../tasks/tasksSlice.jsx';
 import { fetchProjects } from '../projects/ProjectsSlice.jsx';
-import { fetchUsers } from '../users/usersSlice.jsx';
+import { fetchUsers } from '../users/UsersSlice.jsx';
 
 // Recharts components for graphs
 import {
