@@ -684,7 +684,7 @@ Expected output:
 Open your browser and navigate to:
 
 ```
-http://localhost:5173
+https://work-management-system-co6s.vercel.app/reports
 ```
 
 You should see the **Login** page.
