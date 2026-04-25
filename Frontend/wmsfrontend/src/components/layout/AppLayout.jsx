@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
-import Topbar from './Topbar.jsx';
+import Topbar from './Topbar';
 
 // Main layout wrapper for the app
 const AppLayout = () => (

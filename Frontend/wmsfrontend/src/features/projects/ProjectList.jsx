@@ -3,12 +3,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchProjects, deleteProject } from './ProjectsSlice.jsx';
 import { Plus, Pencil, Trash2, ExternalLink, FolderOpen, Info } from 'lucide-react';
-import Badge from '../../components/common/Badge.jsx';
-import Modal from '../../components/common/Modal.jsx';
-import Loader from '../../components/common/Loader.jsx';
-import Button from '../../components/common/Button.jsx';
-import { useModal } from '../../context/ModalContext.jsx';
-import { useNotification } from '../../context/NotificationContext.jsx';
+import Badge from '../../components/common/Badge';
+import Modal from '../../components/common/Modal';
+import Loader from '../../components/common/Loader';
+import Button from '../../components/common/Button';
+import { useModal } from '../../context/ModalContext';
+import { useNotification } from '../../context/NotificationContext';
 import { formatDistanceToNow } from 'date-fns';
 
 // Lazy load ProjectForm to optimize performance

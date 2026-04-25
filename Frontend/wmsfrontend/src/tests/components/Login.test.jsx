@@ -13,12 +13,12 @@
 import React from 'react';
 import { screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderWithProviders } from '../helpers/renderWithProviders.jsx';
+import { renderWithProviders } from '../helpers/renderWithProviders';
 import Login from '../../features/auth/Login.jsx';
-import { loginUser } from '../../features/auth/authSlice.jsx';
+import { loginUser } from '../../features/auth/authSlice';
 
 // 1. ES6 Imports for your mocked modules
-import api from '../../api/axios.jsx';
+import api from '../../api/axios';
 import toast from 'react-hot-toast';
 
 // ── Mocks ─────────────────────────────────────────────────────

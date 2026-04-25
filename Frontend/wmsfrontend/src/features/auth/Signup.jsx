@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { Zap, Eye, EyeOff } from 'lucide-react';
 import { signupUser, clearError } from './authSlice.jsx';
-import { useNotification } from '../../context/NotificationContext.jsx';
+import { useNotification } from '../../context/NotificationContext';
 
 // Validation schema
 const schema = yup.object({

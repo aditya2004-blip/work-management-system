@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../features/auth/authSlice.jsx";
+import { logout } from "../../features/auth/authSlice";
 import {
     LayoutDashboard, FolderKanban, CheckSquare,
     Users, BarChart3, Settings, LogOut, Zap,

@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers, updateUser, deleteUser } from './UsersSlice.jsx';
 import { useForm } from 'react-hook-form';
-import Badge from '../../components/common/Badge.jsx';
-import Modal from '../../components/common/Modal.jsx';
-import Button from '../../components/common/Button.jsx';
+import Badge from '../../components/common/Badge';
+import Modal from '../../components/common/Modal';
+import Button from '../../components/common/Button';
 import { Pencil, Trash2, Users } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
-import { useModal } from '../../context/ModalContext.jsx';
-import { useNotification } from '../../context/NotificationContext.jsx';
+import { useModal } from '../../context/ModalContext';
+import { useNotification } from '../../context/NotificationContext';
 
 // Shared input styling
 const inputClass = 'w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all';

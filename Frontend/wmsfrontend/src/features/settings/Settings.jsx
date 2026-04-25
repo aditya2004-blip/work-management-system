@@ -14,12 +14,12 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Sun, Moon, User, Lock, Shield } from 'lucide-react';
-import api from '../../api/axios.jsx';
-import { setUser } from '../auth/authSlice.jsx';
-import { useTheme } from '../../context/ThemeContext.jsx';
-import { useNotification } from '../../context/NotificationContext.jsx';
-import Button from '../../components/common/Button.jsx';
-import Badge from '../../components/common/Badge.jsx';
+import api from '../../api/axios';
+import { setUser } from '../auth/authSlice';
+import { useTheme } from '../../context/ThemeContext';
+import { useNotification } from '../../context/NotificationContext';
+import Button from '../../components/common/Button';
+import Badge from '../../components/common/Badge';
 
 
 // ---------------- VALIDATION SCHEMA ----------------

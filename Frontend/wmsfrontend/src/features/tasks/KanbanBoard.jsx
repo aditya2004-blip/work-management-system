@@ -4,7 +4,7 @@
 import { useEffect, useState, useCallback, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
-import { fetchTasks, updateTask, deleteTask, taskMoved } from './tasksSlice.jsx';
+import { fetchTasks, updateTask, deleteTask, taskMoved } from './tasksSlice';
 import { fetchUsers } from '../users/UsersSlice.jsx';
 import {
     DndContext,
@@ -17,19 +17,19 @@ import {
 } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 
-import TaskCard from './TaskCard.jsx';
-import Modal from '../../components/common/Modal.jsx';
-import Loader from '../../components/common/Loader.jsx';
-import Button from '../../components/common/Button.jsx';
+import TaskCard from './TaskCard';
+import Modal from '../../components/common/Modal';
+import Loader from '../../components/common/Loader';
+import Button from '../../components/common/Button';
 
-import { useSocket } from '../../context/SocketContext.jsx';
-import { useModal } from '../../context/ModalContext.jsx';
-import { useNotification } from '../../context/NotificationContext.jsx';
+import { useSocket } from '../../context/SocketContext';
+import { useModal } from '../../context/ModalContext';
+import { useNotification } from '../../context/NotificationContext';
 
 import { Plus, Kanban, Info } from 'lucide-react';
 
 // Lazy load task form (code splitting for performance)
-const TaskForm = lazy(() => import('./TaskForm.jsx'));
+const TaskForm = lazy(() => import('./TaskForm'));
 
 // Define Kanban columns
 const COLUMNS = [

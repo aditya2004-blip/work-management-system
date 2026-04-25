@@ -2,9 +2,9 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { createProject, updateProject } from './ProjectsSlice.jsx';
-import { useNotification } from '../../context/NotificationContext.jsx';
-import Button from '../../components/common/Button.jsx';
+import { createProject, updateProject } from './ProjectsSlice';
+import { useNotification } from '../../context/NotificationContext';
+import Button from '../../components/common/Button';
 
 // Validation schema for project form
 const schema = yup.object({
