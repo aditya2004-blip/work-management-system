@@ -1,7 +1,7 @@
 import { useEffect, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { fetchProjects, deleteProject } from './projectsSlice.jsx';
+import { fetchProjects, deleteProject } from './ProjectsSlice.jsx';
 import { Plus, Pencil, Trash2, ExternalLink, FolderOpen, Info } from 'lucide-react';
 import Badge from '../../components/common/Badge.jsx';
 import Modal from '../../components/common/Modal.jsx';

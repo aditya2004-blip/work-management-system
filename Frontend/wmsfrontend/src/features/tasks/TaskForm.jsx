@@ -8,7 +8,7 @@ import * as yup from 'yup';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { createTask, updateTask } from './tasksSlice.jsx';
-import { fetchProjects } from '../projects/projectsSlice.jsx';
+import { fetchProjects } from '../projects/ProjectsSlice.jsx';
 
 import { useNotification } from '../../context/NotificationContext.jsx';
 import Button from '../../components/common/Button.jsx';

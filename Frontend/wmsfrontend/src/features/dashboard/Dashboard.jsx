@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProjects } from '../projects/projectsSlice.jsx';
+import { fetchProjects } from '../projects/ProjectsSlice.jsx';
 import { fetchTasks } from '../tasks/tasksSlice.jsx';
 import { fetchActivities } from './dashboardSlice.jsx';
 import { FolderOpen, CheckSquare, Clock, AlertCircle, Activity, User } from 'lucide-react';
