@@ -4,8 +4,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTasks } from '../tasks/tasksSlice';
-import { fetchProjects } from '../projects/projectsSlice';
-import { fetchUsers } from '../users/usersSlice';
+import { fetchProjects } from '../projects/ProjectsSlice';
+import { fetchUsers } from '../users/UsersSlice';
 import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
     PieChart, Pie, Cell, Legend,
